@@ -1,10 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <title>Movies</title>
+	<!-- Basic Page Needs -->
+	<meta charset="utf-8">
+	<title>Discovermovie</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!-- Mobile Specific Metas-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- FONT -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/actors.css">
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="">
+	<!-- Javascript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/actors.js"></script>
 </head>
+
 <body>
-    
+	<div class="container">
+		
+		<h1>Discovermovie</h1>
+		<p>Discovermovie helps you discover movies based on the actors who starded in it.</p>
+
+		<hr class="header">
+
+		<div class="row">
+			<div class="six columns">
+				<input type="text" placeholder="Enter a name" id="term" class="u-full-width" />
+			</div>
+			<div class="three columns">
+				<button id="search" class="u-full-width">Find</button>
+			</div>
+			<div class="three columns">
+				<button id="clear" class="u-full-width">Clear</button>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="twelve columns">
+				<ul id="results">
+					<li></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="nine columns">
+				<p>Find me movies with <span id="actors">...</span> in them.</p>
+			</div>
+			<div class="three columns">
+				<button id="go" class="u-full-width">Go</button>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="twelve columns">
+				<div id="matches">
+				</div>
+			</div>
+		</div>
+		
+		<hr class="footer">
+
+		<div class="row">
+			<div class="twelve columns">
+				<p><em>This product uses the TMDb API but is not endorsed or certified by TMDb.</em></p>
+			</div>
+		</div>
+
+	</div>
 </body>
+
 </html>
