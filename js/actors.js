@@ -19,7 +19,7 @@ function GetActor(query) {
 		console.log(json);
 
 		$.each(json.results, function (index, item) {
-			$('#results').append("<li class='result' data-id='" + item.id + "'>" + item.name + "</li>");
+			$('#results').append("<tr><td class='result' data-id='" + item.id + "'>" + item.name + "</td></tr>");
 			if (index === 4)
 				return false;
 		});
