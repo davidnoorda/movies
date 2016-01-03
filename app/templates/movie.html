@@ -1,0 +1,14 @@
+<div class="media-left">
+    <img ng-src="{{image_base + movie.poster_path}}" class="media-object" alt="Responsive image"/>
+</div>
+<div class="media-body">
+    <h4 class="media-heading">{{movie.title}}</h4>
+    <div>
+        <strong>Released: </strong>{{movie.release_date}}
+        <br>
+        <strong>Score: </strong>{{movie.vote_average}} from {{movie.vote_count}} reviews.
+        <br>
+        <strong>Popularity: </strong>{{movie.popularity}}
+        <br>
+    </div>
+</div>

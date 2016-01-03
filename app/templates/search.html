@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="well">
+        <ul ng-repeat="actor in wantedActors">
+            <li ng-click="addActor(actor)">{{actor.name}}</li>
+        </ul>
+        <form ng-submit="searchActors()">
+            <div class="form-group">
+                <div class="input-group">
+                    <input type="text" class="form-control" ng-model="query" placeholder="{{placeholder}}">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="submit">Go!</button>
+                    </span>
+                </div>
+            </div>
+        </form>
+        <button class="btn btn-primary btn-block" type="button" ng-click="searchMovies()">Search Movies</button>
+    </div>
+    <div class="well">
+        <div class="list-group">
+            <button type="button" class="list-group-item" ng-repeat="actor in actorResults | limitTo:5" ng-click="addActor(actor)">
+                <img class='img-circle' width="25" height="25" style="object-fit: cover" ng-src='{{profileBase + actor.profile_path}}' />                {{actor.name}}
+            </button>
+            <a class="list-group-item" ng-repeat="movie in movieResults">
+                {{movie.title}}
+            </a>
+        </div>
+    </div>
+</div>
