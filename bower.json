@@ -1,0 +1,25 @@
+{
+  "name": "Little Movie App",
+  "description": "A little movie app.",
+  "main": "",
+  "authors": [
+    "David Noorda"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/davidnoorda/movies",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.6",
+    "angular": "~1.4.8",
+    "angular-route": "~1.4.8"
+  }
+}
