@@ -1,2 +1,18 @@
 ### OSX ###
 .DS_Store
+
+### Bower ###
+bower_components
+.bower-cache
+.bower-registry
+.bower-tmp
+
+### Node ###
+node_modules
+# Logs
+logs
+*.log
+npm-debug.log*
+
+## VS Code ##
+typings

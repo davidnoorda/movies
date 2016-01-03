@@ -1,0 +1,24 @@
+{
+  "name": "movies",
+  "version": "0.0.0",
+  "description": "A little movie app.",
+  "main": "",
+  "dependencies": {},
+  "devDependencies": {
+    "express": "^4.13.3",
+    "gulp": "^3.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidnoorda/movies.git"
+  },
+  "author": "David Noorda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davidnoorda/movies/issues"
+  },
+  "homepage": "https://github.com/davidnoorda/movies#readme"
+}
